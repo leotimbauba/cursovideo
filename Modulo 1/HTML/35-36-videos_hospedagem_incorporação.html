@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este videos esta hospedado no meu próprio servidos</p>
+    <h3>videos podemos colocar de 4 formas video.mp4, videos.m4v, videos.webm, videos.ogv.</h3>
+    <video poster="../img/boom.png" src="../VIDEOS/videos1.mp4" width="500" controls></video>
+
+    <h2>Outra forma de criar codigo de videos</h2>
+    <video width="500" controls poster="../zebra.png">
+        <source src="../VIDEOS/videos2.mp4" type="video/mp4">
+        <source src="../VIDEOS/videos1.m4v" type="video/mp4">
+        <source src="../VIDEOS/videos1.webm" type="video/webm">
+        <source src="../VIDEOS/videos1.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vidoes.</p>
+    </video>
+    <h2>Inserindo vídeos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

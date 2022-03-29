@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        
+    /*  Tipos de Caixas | Tipos de Caixa
+        Caixa com       |   sem quebra de      
+        quebra de       |    linha      
+        linha           |        
+             ^          |          ^
+             I          |          I    
+        -----------------------------
+        | BOX-LEVEL|  INLINE-LEVEL  |
+        |___________________________|
+        | div      |  span          |  
+        | h1 - h6  |  a             |
+        | p        |  code          |
+        | main     |  small         |
+        | header   |  strong        |
+        | nav      |  em            |
+        | article  |  sup - sub     |
+        | aside    |  label         |
+        | form     |  button        |
+        | videos   |  input         |
+        | footer   |  select        |
+        |----------------------------
+    */
+    h1{ /*Vamos aprende a simplificar*/
+        
+       /* EX:1
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkgray;*/
+        /*EX:1 simplificado*/
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+        border: 10px solid darkgray;
+
+        /*EX:2
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        */
+        /*EX:2 simplificado
+        padding: 10px 10px 10px 10px;/*guando os numeros for tudo igual EX: 10 so basta colocar uma vez
+        EX: simplificar
+         EX:2   */
+        padding: 10px;
+
+        /*EX:3
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        */
+        /*EX:3 simplificado*/
+        margin: 20px 20px 40px 40px;
+
+        /*EX:4
+        outline-width: 5px;
+        outline-style:dashed;
+        color: blue;
+        */
+        /*EX:4 simplificado*/
+        outline: 5px dashed blue;
+        
+    }
+    a{/*Vamos simplificar o link
+        border-width: 5px;
+        border-style: solid;
+        border-color: red;
+        */
+        /*EX:1 link*/
+        border: 5px solid red;
+
+        /*EX:2
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;*/
+
+        /*EX:2 siplificado
+        padding: 10px 10px 10px 10px;tudo igual*/
+        padding: 10px;
+        
+    }
+    </style>
+</head>
+<body>
+   <h1>Exemplo de caixa box-level</h1>
+   <p>Parágrafos também são Exemplo de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a> vamos ver como tudo isso funciona.</p>
+</body>
+</html>
