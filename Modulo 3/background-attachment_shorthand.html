@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body{
+           /* opacity: 0.8;
+            height: 100vh;
+            background-image: url('./img/wallpaper002.jpg');
+            background-position: center center;
+            background-color: black;
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background
+                Usando em order
+                1 color > image > position > repeat > {size}
+                > attachment
+            */
+            height: 100vh;
+            background-size: cover;
+            background: black url('./img/wallpaper002.jpg') center center no-repeat fixed;
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 2px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagens de fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat inventore consequatur vel accusantium nesciunt magnam. Quibusdam corrupti, sunt minima totam nisi, illum odio vitae obcaecati, quaerat magni asperiores laborum sequi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam distinctio, hic nesciunt vero magnam sapiente, natus ratione laudantium ipsam consectetur beatae libero quas, porro voluptas ab eveniet odit modi labore.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quibusdam tenetur nemo deserunt eveniet vel aspernatur iste quos molestiae excepturi. Nulla fugit repellat quasi quod commodi minus, vero dolor ipsam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione nobis possimus rerum quia placeat, saepe ipsam impedit iste corrupti fugiat optio alias dolorum beatae tempora? Nam nostrum consequuntur aliquid?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat inventore consequatur vel accusantium nesciunt magnam. Quibusdam corrupti, sunt minima totam nisi, illum odio vitae obcaecati, quaerat magni asperiores laborum sequi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam distinctio, hic nesciunt vero magnam sapiente, natus ratione laudantium ipsam consectetur beatae libero quas, porro voluptas ab eveniet odit modi labore.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quibusdam tenetur nemo deserunt eveniet vel aspernatur iste quos molestiae excepturi. Nulla fugit repellat quasi quod commodi minus, vero dolor ipsam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione nobis possimus rerum quia placeat, saepe ipsam impedit iste corrupti fugiat optio alias dolorum beatae tempora? Nam nostrum consequuntur aliquid?
+    </p>
+    </main>
+</body>
+</html>
