@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            background-color: black;
+            padding: 5px;
+            color: white;
+            border-radius: 5px 5px 0px 0px;
+        }
+        tbody > tr:nth-child(odd){/*Ozabrado tem dois elementos (ODD, EVEN) ou (2n ou 2n-1)*/
+            background-color: rgba(19, 54, 151, 0.836);
+        }
+        thead > tr > th{
+            position: sticky;
+            background-color: black;
+        }
+
+        td, th{
+            border: 1px solid rgb(151, 148, 148);
+            padding: 5px;
+        }
+        td.num{
+            text-align: right;
+        }
+        th.coluna{
+            width: 80px;
+        }
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grande</h1>
+    <!--
+        ANOTOMIA PARA TABELAS GRANDES
+        ______________________________
+        |  TABLE  
+        |   CAPTION                    |
+        |   THEAD                     |
+        |       TR, TD, TH            | 
+        |   TBODY                     |
+        |       TR, TD, TH            |
+        |   TFOOT                     |
+        |       TR, TD, TH            |
+        !_____________________________|
+    --> 
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th class="coluna" scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.019</td>
+            </tr>
+            <tr>
+                <td>Minas Grerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">25.684.321</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">200.564.00</td>
+            </tr>
+            <tr>
+                <td>Salvador</td>
+                <td class="num">658.354.32</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">56.987.00</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">789.645.223</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">254.689.23</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="num">25.654.321</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">56.654.00</td>
+            </tr>
+            <tr>
+                <td>Piuai</td>
+                <td class="num">254.654.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">210.147.125</td>
+            </tr>
+        </tfoot>
+       
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis totam quam ipsam voluptate quibusdam aperiam aliquam, autem minus id quaerat, animi corrupti, laborum dolorum? Non, quae! Consectetur iure voluptatem tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem ea? Rem doloremque hic accusantium architecto nam magni excepturi beatae dolores necessitatibus a. Voluptas corrupti magnam animi delectus dolor eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod, perspiciatis veritatis quae earum quibusdam error ipsa ea non qui sed saepe modi beatae quam, impedit alias necessitatibus maxime illo? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat expedita corporis fuga obcaecati reiciendis est provident illo tempora consectetur ex delectus, maiores ipsam, magnam veritatis id, nihil neque culpa. Quod! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, magnam animi unde ab quae ullam impedit facere harum voluptate? Ex sequi eligendi voluptatem consequatur aliquam quos illum dolor harum natus.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, in recusandae enim nemo nam delectus obcaecati unde nihil, perferendis aut similique ea reiciendis repudiandae! Neque a nostrum quo voluptates non?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis totam quam ipsam voluptate quibusdam aperiam aliquam, autem minus id quaerat, animi corrupti, laborum dolorum? Non, quae! Consectetur iure voluptatem tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem ea? Rem doloremque hic accusantium architecto nam magni excepturi beatae dolores necessitatibus a. Voluptas corrupti magnam animi delectus dolor eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod, perspiciatis veritatis quae earum quibusdam error ipsa ea non qui sed saepe modi beatae quam, impedit alias necessitatibus maxime illo? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat expedita corporis fuga obcaecati reiciendis est provident illo tempora consectetur ex delectus, maiores ipsam, magnam veritatis id, nihil neque culpa. Quod! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, magnam animi unde ab quae ullam impedit facere harum voluptate? Ex sequi eligendi voluptatem consequatur aliquam quos illum dolor harum natus.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, in recusandae enim nemo nam delectus obcaecati unde nihil, perferendis aut similique ea reiciendis repudiandae! Neque a nostrum quo voluptates non?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis totam quam ipsam voluptate quibusdam aperiam aliquam, autem minus id quaerat, animi corrupti, laborum dolorum? Non, quae! Consectetur iure voluptatem tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem ea? Rem doloremque hic accusantium architecto nam magni excepturi beatae dolores necessitatibus a. Voluptas corrupti magnam animi delectus dolor eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod, perspiciatis veritatis quae earum quibusdam error ipsa ea non qui sed saepe modi beatae quam, impedit alias necessitatibus maxime illo? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat expedita corporis fuga obcaecati reiciendis est provident illo tempora consectetur ex delectus, maiores ipsam, magnam veritatis id, nihil neque culpa. Quod! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, magnam animi unde ab quae ullam impedit facere harum voluptate? Ex sequi eligendi voluptatem consequatur aliquam quos illum dolor harum natus.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, in recusandae enim nemo nam delectus obcaecati unde nihil, perferendis aut similique ea reiciendis repudiandae! Neque a nostrum quo voluptates non?</p>
+</body>
+</html>
